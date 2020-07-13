@@ -1556,67 +1556,7 @@ header{
         margin-top: 56px;
     }
 }
-.b-modal{
-    max-width: 438px;
-}
- .modal-content{
-     position: relative;
-     max-width: 438px;
-     width: 100%;
-     background-color: $white;
-     box-sizing: border-box;
-     padding: 45px;
-     border-radius: 5px;
 
-     &__title{
-         margin-bottom: 30px;
-         text-align: center;
-         font-size: 18px;
-         line-height: 21px;
-         color: $black;
-         font-weight: 700;
-     }
-
-     &__button{
-         border-radius: 0;
-         display: block;
-         width: 100%;
-         margin-top: 25px;
-         padding: 14.5px;
-         outline: 0;
-         border: 0;
-         cursor: pointer;
-     }
-     &__input{
-
-        & + &{
-            margin-top: 15px;
-        }
-         border-bottom-color: rgba(#323232, .5);
-     }
-     &__textarea{
-         margin-top: 10px;
-         display: block;
-         width: 100%;
-         height: 60px;
-         box-sizing: border-box;
-         padding: 6px 15px;
-         border: 0;
-         outline: 0;
-         border-bottom:1px solid rgba( #323232, .5)
-     }
- }
- .arcticmodal-close{
-     position: absolute;
-     top: 12px;
-     right: 19px;
-     background: url(../images/svg/close.svg) no-repeat center center;
-     background-size: contain;
-     height: 15px;
-     width: 15px;
-     z-index: 20;
-     cursor: pointer;
- }
 
  .slider-navigation{
      display: flex;
@@ -1666,4 +1606,73 @@ header{
         flex-shrink: 0;
         margin: 0 12px;
     }
+ }
+
+
+ .b-modal{
+    max-width: 438px;
+}
+ .modal-content{
+     position: relative;
+     max-width: 438px;
+     width: 100%;
+     background-color: $white;
+     box-sizing: border-box;
+     padding: 45px;
+     border-radius: 5px;
+
+     &__title{
+         margin-bottom: 30px;
+         text-align: center;
+         font-size: 18px;
+         line-height: 21px;
+         color: $black;
+         font-weight: 700;
+     }
+    
+     &__button{
+         border-radius: 0;
+         display: block;
+         width: 100%;
+         margin-top: 25px;
+         padding: 14.5px;
+         outline: 0;
+         border: 0;
+         cursor: pointer;
+     }
+     &__input{
+        color: rgba($blue, .5);
+        border-color: rgba($blue, .5);
+
+        &::placeholder{
+            color: rgba($blue, .5);
+        }
+        & + &{
+            margin-top: 15px;
+        }
+        
+     }
+
+     &__textarea{
+         margin-top: 10px;
+         display: block;
+         width: 100%;
+         height: 60px;
+         box-sizing: border-box;
+         padding: 6px 15px;
+         border: 0;
+         outline: 0;
+         border-bottom:1px solid rgba( #323232, .5)
+     }
+ }
+ .arcticmodal-close{
+     position: absolute;
+     top: 12px;
+     right: 19px;
+     background: url(../images/icons/close.svg) no-repeat center center;
+     background-size: contain;
+     height: 15px;
+     width: 15px;
+     z-index: 20;
+     cursor: pointer;
  }

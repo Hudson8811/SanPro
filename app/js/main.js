@@ -181,7 +181,7 @@ var reviews = new Swiper('.reviews__slider .swiper-container', {
 
 
 
-$(".callback-button").click(function(){
+$(".call-button").click(function(){
   $("#callback-modal").arcticmodal();
 });
 $(".selection-button").click(function(){
