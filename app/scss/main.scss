@@ -902,14 +902,12 @@ header{
         }
     }
     &__row{
-        &:after{
-            content: '';
-            clear: both;
-        }
+       display: flex;
+       align-items: flex-start;
 
         @include for-md(){
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: column;
         }
     }
     &__text{
@@ -932,7 +930,7 @@ header{
         margin-left: 147px;
         width: 505px;
         height: 369px;
-        float: right;
+       flex-shrink: 0;
         @include for-lg(){
             margin-left: 50px;
         }
